@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "momstypewriterregular";
+  src: url("moms_typewriter-webfont.woff2") format("woff2"),
+    url("fonts/moms_typewriter-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin flexLayout($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/*Color Variables*/
+$light-grey: #d9d9d9;
+$dark-grey: #595959;
+$anthrazit: #333333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "momstypewriterregular";
+  font-weight: 400;
+}
+html {
+  font-size: 65.5%;
+}
+
+body {
+  background-image: url("/media/P1010552.jpg");
+  background-size: contain;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}

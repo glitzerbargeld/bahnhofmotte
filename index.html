@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahnhof Motte</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
+    <!-- Load font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="src/media/background.mp4" type="video/mp4" />
+    </video>
+
+    
+   
+    <div class="container">
+      <div class="menu">
+        <div class="menu-line menu-line-1"></div>
+        <div class="menu-line menu-line-2"></div>
+        <div class="menu-line menu-line-3"></div>
+      </div>
+
+      <nav class="navbar">
+        <div class="nav-list">
+          <a class="nav-point" href="#videos">Recent Videos</a>
+          <a class="nav-point" href="#tourdates">Tourdates</a>
+          <a class="nav-point" href="#bands">Bands we like</a>
+          <a class="nav-point" href="#contact">Contact</a>
+        </div>
+      </nav>
+      
+      <!-- The social media icon bar -->
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="#" class="bandcamp"><i class="fa fa-bandcamp"></i></a>
+      </div>
+      <section class="section-1">
+        <img class="band-logo" src="src/media/BahnhofMotteLogo-1.png" />
+      </section>
+    
+    <section class="section-2" id="videos">
+      <div class="video-gallery"></div>
+      <h2>EINLASS</h2>
+
+        <div class="yt-video">
+        <iframe
+          
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/qFRcUJ4dSkU?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h2>DAS WORT ZUM SONNTAG</h2>
+      <div class="yt-video">
+        <iframe
+          width="560"
+          height="315"
+          
+          src="https://www.youtube.com/embed/JsMrTZ54l1o?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      </div>
+    </section>
+    <section class="section-3" id="tourdates">
+      <h1>TOURDATES</h1>
+
+      <div class="row">
+      
+      <div class="column">
+        <h2 id="past-dates">Past</h2>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </ul>
+      </div>
+      <div class="column"><h2 id="future-dates">Future</h2>
+        <ul>
+          <li>1</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul></div>
+      
+    </div>
+    </section>
+
+    <section class="section-4" id="contact">
+      <h1>CONTACT</h1>
+    </section>
+  
+    <footer class="footer"></footer>
+  </div>
+  <script src="src/js/scripts.js"></script>
+  </body>
+</html>

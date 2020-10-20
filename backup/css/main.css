@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "momstypewriterregular";
+  src: url("moms_typewriter-webfont.woff2") format("woff2"), url("fonts/moms_typewriter-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*Color Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "momstypewriterregular";
+  font-weight: 400; }
+
+html {
+  font-size: 65.5%; }
+
+body {
+  background-image: url("/media/P1010552.jpg");
+  background-size: contain; }
+
+#background-video {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: fill;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+
+.section-1 {
+  height: 100vh;
+  background: linear-gradient(rgba(89, 89, 89, 0.5), rgba(0, 0, 0, 0.5)); }
+
+.section-2 {
+  height: 100vh; }
