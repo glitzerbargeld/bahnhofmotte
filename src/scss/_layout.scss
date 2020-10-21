@@ -1,12 +1,25 @@
 .row {
   display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
   padding: 5rem;
 }
-.column {
-  flex: 50%;
-  padding: 5rem;
-  h2 {
-    text-align: center;
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
   }
 }
 
@@ -18,6 +31,7 @@
 }
 .section-2 {
   height: 100vh;
+  min-height: 680px;
   background: rgba(purple, 0.8);
   @include flexLayout(space-between);
   flex-direction: column;
@@ -27,10 +41,10 @@
 }
 
 .section-3 {
-  height: 100vh;
+  height: auto;
 
   background: rgba($light-grey, 0.75);
-  padding-top: 3rem;
+  padding: 3rem 0;
   border-bottom: 5px dotted black;
 
   h1 {
@@ -39,10 +53,13 @@
 
   h2 {
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   li {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
   }
 }
 
