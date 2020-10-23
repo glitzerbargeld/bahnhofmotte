@@ -66,9 +66,14 @@
 .section-4 {
   height: 100vh;
   text-align: center;
-
   background: rgba($light-grey, 0.75);
   padding-top: 6rem;
+}
+
+.email-container {
+  margin: 15rem auto;
+  width: 50rem;
+  overflow: hidden;
 
   h1 {
     text-align: center;
@@ -80,15 +85,16 @@
 
   li {
     font-size: 2rem;
-  }
-
-  .email-container {
-    width: 50%;
-    align-items: center;
-    padding: 3rem;
+    line-height: 5rem;
   }
   a {
+    color: black;
     font-size: 2rem;
+    transition: 0.5s ease-in;
+  }
+  a:hover {
+    font-size: 3rem;
+    color: white;
   }
 }
 

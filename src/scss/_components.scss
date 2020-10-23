@@ -1,6 +1,27 @@
 @import "./breakpoints/breakpoints.scss";
 
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+
+@keyframes glitch-text {
+  from {
+    transform: translate(15px 10px);
+  }
+  to {
+    transform: translate(0 0);
+  }
+}
+
 .band-logo {
+  animation-name: glitch-text;
+  animation-duration: 1s;
+
   @include media(">desktop") {
     width: 800px;
   }
