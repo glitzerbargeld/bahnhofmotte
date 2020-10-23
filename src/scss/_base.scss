@@ -46,3 +46,21 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+
+@keyframes blurry {
+  from {
+    filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+  to {
+    filter: none;
+  }
+}
+
+.container {
+  animation-name: blurry;
+  animation-duration: 10s;
+}
