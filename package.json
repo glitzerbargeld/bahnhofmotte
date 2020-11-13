@@ -7,7 +7,7 @@
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
     "watch:css": "onchange 'src/scss' -- npm run scss",
-    "start" : "run-p serve watch:css"
+    "start": "run-p serve watch:css"
   },
   "author": "Torben Jäckel",
   "license": "ISC",
