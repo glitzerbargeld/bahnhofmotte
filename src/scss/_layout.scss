@@ -32,12 +32,12 @@
 .section-2 {
   height: 100vh;
   min-height: 680px;
-  background: rgba(purple, 0.8);
+  background: rgba(252, 3, 219, 0.8);
   @include flexLayout(space-between);
   flex-direction: column;
   padding: 5rem 0;
-  border-top: 15px dotted black;
-  border-bottom: 15px dotted black;
+  border-top: 5px dotted black;
+  border-bottom: 5px dotted black;
 }
 
 .section-3 {
