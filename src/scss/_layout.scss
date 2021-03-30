@@ -24,11 +24,54 @@
 }
 
 .section-1 {
-  height: 100vh;
+  min-height: 100vh;
+  display: block;
+  overflow: auto;
   background: linear-gradient(rgba(white, 0.5), rgba(black, 0.5));
   @include flexLayout();
   z-index: -1;
+  padding-top: 100px;
 }
+
+
+.wrapper { 
+  border : 2px solid #000; 
+  overflow:hidden;
+  padding: 10px;
+  margin: 2%;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+#albumcover {
+  
+  float:left; 
+  
+  max-width:455px;
+  
+}
+#album-description { 
+  background-color: white;
+  overflow:hidden;
+  margin:10px;
+  border:2px dashed #ccc;
+  min-height:170px;
+  padding-top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+   #albumcover {
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;    
+  }
+}
+
+
 .section-2 {
   height: 100vh;
   min-height: 680px;
@@ -107,7 +150,7 @@
   }
 }
 
-.navbar {
+.navbar{
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.8s linear, opacity 0.3s linear;
@@ -224,4 +267,8 @@
 
 .cancelled {
   text-decoration: line-through;
+}
+
+.main{
+  top: 90px;
 }

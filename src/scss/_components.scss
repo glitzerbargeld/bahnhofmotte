@@ -18,19 +18,31 @@
   }
 }
 
+.header{
+  height: 70px;
+  background: black;
+  align-items: justify;
+  position:fixed;
+  width: 100%;
+  z-index: 100;
+}
 .band-logo {
   animation-name: glitch-text;
   animation-duration: 1s;
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 30%;
+  display: block;
 
   @include media(">desktop") {
-    width: 800px;
+    width: 25%;
   }
   @include media("<=phone") {
-    width: 300px;
+    display: none !important;
   }
   @include media("<=tablet") {
-    width: 80%;
-  }
+display: none !important }
 }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
@@ -60,6 +72,8 @@
     background-color: white;
     color: black;
   }
+
+
 }
 
 .icon-bar-2 {
@@ -83,8 +97,24 @@
     background-color: white;
     color: black;
   }
+
+  
 }
 /* Style the social media icons with color, if you want */
+
+
+.newalbum{
+  width: 60vw;;
+  height: 60vw;
+  background: green;
+  padding: 20px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  
+}
 
 .yt-video {
   position: relative;
@@ -339,4 +369,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.navbar-wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: black;
+  align-items: justify;
+  position:fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+
+#cover{
+  max-height: 100%;
 }
