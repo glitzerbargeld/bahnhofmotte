@@ -183,6 +183,11 @@
   }
 }
 
+.sticky {
+  transition: 1s;
+  height: 60px !important;
+}
+
 .footer {
   height: 40px;
   background: black;

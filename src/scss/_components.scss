@@ -32,7 +32,7 @@
   position: relative;
   display: flex;
   margin: auto;
-  width: 30%;
+  height: 70%;
   display: block;
 
   @include media(">desktop") {
@@ -52,7 +52,6 @@ display: none !important }
   display: flex;
   text-align: left;
   width: 100%;
-  top: 19px;
   left: 2%;
 
   a {
@@ -131,7 +130,7 @@ a.nav-point {
     border: 1rem double black;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(min(70vh, 100%));
     top: 0;
     left: 0;
   }
@@ -155,7 +154,6 @@ a.nav-point {
 
 .menu {
   z-index: 1000;
-  top: 19px;
   right: 2%;
   position: fixed;
   height: 43px;
@@ -373,11 +371,12 @@ a.nav-point {
 
 
 .navbar-wrapper{
+  transition: 1s;
   display: flex;
   justify-content: space-between;
   height: 80px;
   background: black;
-  align-items: justify;
+  align-items: center;
   position:fixed;
   width: 100%;
   z-index: 100;

@@ -58,3 +58,9 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+/*Sticky Navbar*/
+
+window.addEventListener("scroll", function() {
+  let navbar = document.getElementById("nav");
+  navbar.classList.toggle("sticky", window.scrollY > 0);
+})
