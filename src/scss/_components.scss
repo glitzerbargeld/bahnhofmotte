@@ -32,19 +32,14 @@
   position: relative;
   display: flex;
   margin: auto;
-  height: 70%;
+  height: 50px;
   display: block;
 
-  @include media(">desktop") {
-    width: 25%;
+  @media (max-width: 567px) {
+    height: 40px;
+    margin: 10px;
   }
-  @include media("<=phone") {
-    display: none !important;
-  }
-  @include media("<=tablet") {
-display: none !important }
 }
-
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   z-index: 100;
@@ -53,6 +48,14 @@ display: none !important }
   text-align: left;
   width: 100%;
   left: 2%;
+
+  @media (max-width: 567px) {
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background: black;
+    justify-content: space-between;
+  }
 
   a {
     text-align: center;
